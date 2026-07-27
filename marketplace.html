@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LIBdelivery Marketplace</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="styles.css">
+
+
+<link rel="icon" href="Assets/favicon/favicon.png.png">
+
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<nav>
+
+
+<a href="index.html" class="logo">
+
+<span>LIB</span>delivery
+
+</a>
+
+
+
+<ul>
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+
+<li>
+<a href="restaurants.html">
+Restaurants
+</a>
+</li>
+
+
+<li>
+<a href="marketplace.html">
+Marketplace
+</a>
+</li>
+
+
+<li>
+<a href="about.html">
+About
+</a>
+</li>
+
+
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+
+</ul>
+
+
+
+<div class="nav-action">
+
+
+<a href="cart.html" class="cart-link">
+
+🛒 Cart
+
+<span id="cart-count">
+0
+</span>
+
+</a>
+
+
+
+<a href="marketplace.html" class="market-btn">
+Marketplace
+</a>
+
+
+<a href="contact.html" class="order-btn">
+Order Now
+</a>
+
+
+</div>
+
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+<main>
+
+
+
+<!-- MARKETPLACE HERO -->
+
+
+<section class="market-hero">
+
+
+<div>
+
+
+<h1>
+Shop Products Delivered To Your Door
+</h1>
+
+
+<p>
+Buy groceries, household items, drinks and other products from trusted sellers around Liberia.
+</p>
+
+
+
+<div class="search-box">
+
+
+<input 
+type="search"
+placeholder="Search products..."
+>
+
+
+<button>
+Search
+</button>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- CATEGORY -->
+
+
+<section class="categories">
+
+
+<h2>
+Shop By Category
+</h2>
+
+
+<div class="category-container">
+
+
+<div>
+🛒
+<h3>
+Groceries
+</h3>
+</div>
+
+
+<div>
+🥤
+<h3>
+Drinks
+</h3>
+</div>
+
+
+<div>
+🧴
+<h3>
+Household
+</h3>
+</div>
+
+
+<div>
+💊
+<h3>
+Pharmacy
+</h3>
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- PRODUCTS -->
+
+
+<section class="products">
+
+
+<h2>
+Popular Products
+</h2>
+
+
+
+<div class="product-container">
+
+
+
+
+
+<div class="product-card">
+
+
+<img src="Assets/images/product1.jpg" alt="Product">
+
+
+
+<h3>
+Premium Rice Bag
+</h3>
+
+
+<p class="short-description">
+
+High quality imported rice perfect for families.
+
+</p>
+
+
+
+<div class="price">
+
+$25.00
+
+</div>
+
+
+
+<div class="rating">
+
+⭐⭐⭐⭐⭐
+(120 Reviews)
+
+</div>
+
+
+
+<div class="quantity">
+
+
+<button>
+-
+</button>
+
+
+<span>
+1
+</span>
+
+
+<button>
++
+</button>
+
+
+</div>
+
+
+
+<button 
+class="cart-btn"
+onclick="addToCart('Premium Rice Bag',25)">
+Add To Cart
+</button>
+
+
+
+<button class="details-btn">
+
+View More Details
+
+</button>
+
+
+
+
+<div class="product-details">
+
+
+<h4>
+Product Details
+</h4>
+
+
+<p>
+Premium quality rice imported and carefully packaged.
+Suitable for home cooking and restaurants.
+</p>
+
+
+<p>
+<strong>
+Seller:
+</strong>
+Monrovia Supermarket
+</p>
+
+
+<p>
+<strong>
+Delivery:
+</strong>
+Same day delivery available
+</p>
+
+
+<p>
+<strong>
+Rating:
+</strong>
+4.9/5 from customers
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="product-card">
+
+
+<img src="Assets/images/product2.jpg" alt="Product">
+
+
+
+<h3>
+Soft Drinks Pack
+
+</h3>
+
+
+
+<p class="short-description">
+
+Cold beverages for home and events.
+
+</p>
+
+
+
+<div class="price">
+
+$10.00
+
+</div>
+
+
+
+<div class="rating">
+
+⭐⭐⭐⭐
+(85 Reviews)
+
+</div>
+
+
+
+<div class="quantity">
+
+
+<button>
+-
+</button>
+
+
+<span>
+1
+</span>
+
+
+<button>
++
+</button>
+
+
+</div>
+
+
+
+
+<button 
+class="cart-btn"
+onclick="addToCart('Soft Drinks Pack',10)">
+Add To Cart
+</button>
+
+
+
+<button class="details-btn">
+
+View More Details
+
+</button>
+
+
+
+
+<div class="product-details">
+
+
+<h4>
+Product Details
+</h4>
+
+
+<p>
+Refreshing drinks available for delivery.
+</p>
+
+
+<p>
+<strong>
+Seller:
+</strong>
+City Market
+</p>
+
+
+<p>
+<strong>
+Delivery:
+</strong>
+Within Monrovia
+</p>
+
+
+<p>
+<strong>
+Rating:
+</strong>
+4.7/5
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="product-card">
+
+
+<img src="Assets/images/product3.jpg" alt="Product">
+
+
+<h3>
+Cleaning Products
+
+</h3>
+
+
+<p class="short-description">
+
+Household cleaning essentials.
+
+</p>
+
+
+
+<div class="price">
+
+$15.00
+
+</div>
+
+
+
+<div class="rating">
+
+⭐⭐⭐⭐⭐
+(200 Reviews)
+
+</div>
+
+
+
+
+<div class="quantity">
+
+
+<button>
+-
+</button>
+
+
+<span>
+1
+</span>
+
+
+<button>
++
+</button>
+
+
+</div>
+
+
+
+<button 
+class="cart-btn"
+onclick="addToCart('Cleaning Products',15)">
+Add To Cart
+</button>
+
+
+
+<button class="details-btn">
+
+View More Details
+
+</button>
+
+
+
+
+<div class="product-details">
+
+
+<h4>
+Product Details
+</h4>
+
+
+<p>
+Quality household products for everyday cleaning.
+</p>
+
+
+<p>
+<strong>
+Seller:
+</strong>
+LIB Store
+</p>
+
+
+<p>
+<strong>
+Delivery:
+</strong>
+Fast delivery available
+</p>
+
+
+<p>
+<strong>
+Rating:
+</strong>
+5/5
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+</main>
+
+
+
+<footer class="footer">
+
+
+<p>
+© 2026 LIBdelivery. All rights reserved.
+</p>
+
+
+</footer>
+
+
+
+
+<script>
+
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+
+function addToCart(product, price){
+
+
+cart.push({
+
+name:product,
+
+price:price
+
+});
+
+
+localStorage.setItem(
+"cart",
+JSON.stringify(cart)
+);
+
+
+updateCart();
+
+
+alert(product + " added to cart");
+
+
+}
+
+
+
+function updateCart(){
+
+
+let count = document.getElementById("cart-count");
+
+
+if(count){
+
+count.innerHTML = cart.length;
+
+}
+
+
+}
+
+
+
+updateCart();
+
+
+
+</script>
+
+
+
+</body>
+
+</html>

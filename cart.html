@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Your Cart - LIBdelivery</title>
+
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1 class="cart-title">
+Your Shopping Cart
+</h1>
+
+</header>
+
+
+
+<section class="cart-section">
+
+
+<div id="cart-items">
+
+
+</div>
+
+
+
+<div class="cart-total">
+
+
+<h2>
+Total:
+$<span id="total">
+0
+</span>
+</h2>
+
+
+
+<button>
+Proceed To Checkout
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<script>
+
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+
+let cartItems = document.getElementById("cart-items");
+
+
+let total = 0;
+
+
+
+cart.forEach(item=>{
+
+
+cartItems.innerHTML += `
+
+<div class="cart-product">
+
+<h3>
+${item.name}
+</h3>
+
+
+<p>
+$${item.price}
+</p>
+
+</div>
+
+`;
+
+
+total += item.price;
+
+
+});
+
+
+
+document.getElementById("total").innerHTML = total;
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
